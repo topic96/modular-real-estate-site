@@ -38,6 +38,17 @@ User auth, favorites/wishlists, virtual tours (360°), mortgage calculator, agen
 
 ---
 
+## Deploy to Vercel & open on mobile
+
+1. **Push to GitHub** (if not already): create a repo and push this project.
+2. **Connect to Vercel**: go to [vercel.com](https://vercel.com) → **Add New** → **Project** → import your GitHub repo. Leave build settings as-is (Vite is auto-detected).
+3. **Deploy**: Vercel builds and deploys. You get a URL like `your-project.vercel.app`.
+4. **Open on mobile**: open that URL in your phone’s browser, or use **Add to Home Screen** for an app-like shortcut (meta tags are set for mobile).
+
+**CI/CD**: GitHub Actions (`.github/workflows/ci.yml`) runs `npm run build` on every push/PR to `main` or `master`. Vercel auto-deploys when you push to the connected branch.
+
+---
+
 ## Benefits
 - **Zero downtime** — Add/remove properties without code changes.
 - **SEO-ready** — Meta, structured data, sitemap, robots.
